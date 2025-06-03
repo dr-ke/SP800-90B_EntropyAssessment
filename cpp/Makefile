@@ -46,5 +46,10 @@ transpose_main.o: transpose_main.cpp
 	$(CXX) $(CXXFLAGS) $(INC) transpose_main.cpp -o ea_transpose $(LIB) $(SHARED_LIB)
 
 
-compression_only: $(SHARED_SOURCES) $(NON_IID_SOURCES) compression_only_main.cpp
-	$(CXX) $(CXXFLAGS) $(SHARED_SOURCES) $(NON_IID_SOURCES) compression_only_main.cpp $(LDFLAGS) -o ea_compression_only
+compression_only: compression_only_main.cpp
+	$(CXX) $(CXXFLAGS) compression_only_main.cpp \
+		shared/utils.cpp \
+		shared/most_common.cpp \
+		shared/TestRunUtils.cpp \
+		non_iid/compression_test.cpp \
+		$(LDFLAGS) -lssl -lcrypto -ljsoncpp -o ea_compression_only
