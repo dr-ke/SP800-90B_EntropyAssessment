@@ -48,8 +48,8 @@ transpose_main.o: transpose_main.cpp
 
 compression_only: compression_only_main.cpp
 	$(CXX) $(CXXFLAGS) compression_only_main.cpp \
-		shared/utils.cpp \
-		shared/most_common.cpp \
-		shared/TestRunUtils.cpp \
-		non_iid/compression_test.cpp \
+		shared/utils.h \
+		shared/most_common.h \
+		shared/TestRunUtils.h \
+		non_iid/compression_test.h \
 		$(LDFLAGS) -lssl -lcrypto -ljsoncpp -o ea_compression_only
