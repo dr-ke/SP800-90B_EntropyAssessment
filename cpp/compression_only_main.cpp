@@ -2,8 +2,16 @@
 
 #include "shared/utils.h"
 #include "shared/most_common.h"
+#include "shared/lrs_test.h"
+#include "non_iid/non_iid_test_run.h"
 #include "shared/TestRunUtils.h"
+#include "non_iid/collision_test.h"
+#include "non_iid/lz78y_test.h"
+#include "non_iid/multi_mmc_test.h"
+#include "non_iid/lag_test.h"
+#include "non_iid/multi_mcw_test.h"
 #include "non_iid/compression_test.h"
+#include "non_iid/markov_test.h"
 
 #include <getopt.h>
 #include <limits.h>
