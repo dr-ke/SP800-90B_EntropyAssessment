@@ -124,3 +124,58 @@ For more information on the estimation methods, see [SP 800-90B](https://nvlpubs
 ## Contributions
 
 Pull requests are welcome and will be reviewed before being merged. No timelines are promised. The code is maintained by Chris Celi (NIST).
+
+```
+nist_eat
+├─ bin
+│  ├─ biased-random-bits.bin
+│  ├─ biased-random-bytes.bin
+│  ├─ data.pi.bin
+│  ├─ normal.bin
+│  ├─ rand1_short.bin
+│  ├─ rand4_short.bin
+│  ├─ rand8_short.bin
+│  ├─ ringOsc-nist.bin
+│  ├─ truerand_1bit.bin
+│  ├─ truerand_4bit.bin
+│  └─ truerand_8bit.bin
+├─ cpp
+│  ├─ compression-extracted
+│  │  ├─ compression_minimal.cpp
+│  │  └─ utils_minimal.h
+│  ├─ compression_only_main.cpp
+│  ├─ conditioning_main.cpp
+│  ├─ iid
+│  │  ├─ chi_square_tests.h
+│  │  ├─ iid_test_case.h
+│  │  ├─ iid_test_run.h
+│  │  ├─ permutation_tests.h
+│  │  └─ permutation_test_result.h
+│  ├─ iid_main.cpp
+│  ├─ Makefile
+│  ├─ non_iid
+│  │  ├─ collision_test.h
+│  │  ├─ compression_test.h
+│  │  ├─ lag_test.h
+│  │  ├─ lz78y_test.h
+│  │  ├─ markov_test.h
+│  │  ├─ multi_mcw_test.h
+│  │  ├─ multi_mmc_test.h
+│  │  ├─ non_iid_test_case.h
+│  │  └─ non_iid_test_run.h
+│  ├─ non_iid_main.cpp
+│  ├─ restart_main.cpp
+│  ├─ shared
+│  │  ├─ lrs_test.h
+│  │  ├─ most_common.h
+│  │  ├─ TestCase.h
+│  │  ├─ TestRunUtils.h
+│  │  ├─ test_case_base.h
+│  │  ├─ test_run_base.h
+│  │  └─ utils.h
+│  └─ transpose_main.cpp
+├─ CUSTOM_CHANGES.md
+├─ dockerfile
+└─ README.md
+
+```
