@@ -30,7 +30,7 @@ RUN git checkout feature/fast-compression-test
 
 # Build original implementation
 WORKDIR /opt/entropy/cpp
-RUN make
+RUN make compression_only
 
 # Build minimal implementation (assuming files are in repo)
 WORKDIR /opt/entropy
