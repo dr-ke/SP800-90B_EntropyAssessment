@@ -45,5 +45,7 @@ transpose: transpose_main.o
 transpose_main.o: transpose_main.cpp
 	$(CXX) $(CXXFLAGS) $(INC) transpose_main.cpp -o ea_transpose $(LIB) $(SHARED_LIB)
 
-compression_only: compression_only_main.cpp
+# Add the compression_only target
+compression_only: compression_only.o
+compression_only.o: compression_only_main.cpp
 	$(CXX) $(CXXFLAGS) $(INC) compression_only_main.cpp -o ea_compression_only $(LIB) $(SHARED_LIB)
